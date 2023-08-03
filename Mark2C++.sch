@@ -1036,18 +1036,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female LD0
 U 1 1 64B6227D
-P 8000 3200
-F 0 "LD0" H 8028 3180 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 8028 3135 50  0001 L CNN
-F 2 "Connectors:1X01_2MM" H 8000 3200 50  0001 C CNN
-F 3 "~" H 8000 3200 50  0001 C CNN
-	1    8000 3200
+P 8000 2900
+F 0 "LD0" H 8028 2880 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 8028 2835 50  0001 L CNN
+F 2 "Connectors:1X01_2MM" H 8000 2900 50  0001 C CNN
+F 3 "~" H 8000 2900 50  0001 C CNN
+	1    8000 2900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	7850 3900 8000 3900
-Wire Wire Line
-	8000 3900 8000 3400
 $Comp
 L Device:C C28
 U 1 1 64B6898D
@@ -1059,8 +1057,6 @@ F 3 "~" H 8300 3900 50  0001 C CNN
 	1    8300 3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8150 3900 8000 3900
 Connection ~ 8000 3900
 $Comp
 L Connector:Conn_01x01_Female LD10
@@ -1153,8 +1149,6 @@ Wire Wire Line
 	8100 2500 8100 2450
 Wire Wire Line
 	8500 2500 8500 2450
-Wire Notes Line rgb(255, 0, 0)
-	8000 3200 8000 2600
 Wire Notes Line rgb(255, 0, 0)
 	8000 2600 8100 2600
 Wire Notes Line rgb(255, 0, 0)
@@ -3660,10 +3654,10 @@ Wire Wire Line
 	2250 12350 2250 12150
 Connection ~ 2250 12150
 $Comp
-L Device:R_POT 750Hz2
+L Device:R_POT 240Hz
 U 1 1 65F391A3
 P 2050 11450
-F 0 "750Hz2" H 1980 11404 50  0000 R CNN
+F 0 "240Hz" H 1980 11404 50  0000 R CNN
 F 1 "50K Lin" H 1980 11495 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTA4543_Single_Slide" H 2050 11450 50  0001 C CNN
 F 3 "~" H 2050 11450 50  0001 C CNN
@@ -3767,10 +3761,10 @@ Wire Wire Line
 	1050 12650 1050 12850
 Connection ~ 1050 12850
 $Comp
-L Device:R_POT 750Hz1
+L Device:R_POT 80Hz
 U 1 1 663D8493
 P 850 11450
-F 0 "750Hz1" H 780 11404 50  0000 R CNN
+F 0 "80Hz" H 780 11404 50  0000 R CNN
 F 1 "50K Lin" H 780 11495 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTA4543_Single_Slide" H 850 11450 50  0001 C CNN
 F 3 "~" H 850 11450 50  0001 C CNN
@@ -5503,4 +5497,23 @@ Wire Wire Line
 Wire Wire Line
 	1000 8650 1400 8650
 Connection ~ 1400 8650
+$Comp
+L Device:C C58
+U 1 1 64E58630
+P 8000 3350
+F 0 "C58" H 7850 3450 50  0000 C CNN
+F 1 "22nF 400V" H 7700 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 8038 3200 50  0001 C CNN
+F 3 "~" H 8000 3350 50  0001 C CNN
+	1    8000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3200 8000 3100
+Wire Wire Line
+	8000 3500 8000 3900
+Wire Notes Line rgb(255, 0, 0)
+	8000 2900 8000 2600
+Wire Wire Line
+	8150 3900 8000 3900
 $EndSCHEMATC
