@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Mark2C++-rescue")(type "KiCad")(uri "${KIPRJMOD}/Mark2C++-rescue.kicad_sym")(options "")(descr ""))
+)
